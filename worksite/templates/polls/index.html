@@ -1,10 +1,19 @@
+<head>
+
+</head>
+
+<h1>
+<center>Welcome to the Co-op Polling Station</center>
+</h1>
+
 {% if latest_poll_list %}
+	<p>Any currently active polls are shown below. Click to vote.</p>
     <ul>
     {% for poll in latest_poll_list %}
         <li><a href="/polls/{{ poll.id }}/">{{ poll.question }}</a></li>
     {% endfor %}
     </ul>
 {% else %}
-    <p>No polls are available.</p>
+    <p>No polls are available. Please talk to the administrator if you expected to see a poll here.</p>
 {% endif %}
 
