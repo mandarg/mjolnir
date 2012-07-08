@@ -103,9 +103,11 @@ MIDDLEWARE_CLASSES = (
 ROOT_URLCONF = 'worksite.urls'
 
 TEMPLATE_DIRS = (
+    "/Users/kkaylan/Documents/mjolnir/worksite/templates"
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
+    # Set an appropriate path according to where it's hosted
 )
 
 INSTALLED_APPS = (
@@ -120,7 +122,7 @@ INSTALLED_APPS = (
     # Uncomment the next line to enable admin documentation:
     'django.contrib.admindocs',
     'csvimport',
-    'work_survey'
+    'polls'
 )
 
 # A sample logging configuration. The only tangible logging
