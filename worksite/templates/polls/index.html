@@ -1,17 +1,10 @@
 {% if latest_poll_list %}
-{% load dajaxice_templatetags %}
-
-<head>
-  {% dajaxice_js_import %}
-</head>
-
-<ul>
-  {% for poll in latest_poll_list %}
-  <li><a href="/polls/{{ poll.id }}/">{{ poll.question }}</a></li>
-  {% endfor %}
-</ul>
-
+    <ul>
+    {% for poll in latest_poll_list %}
+        <li><a href="/polls/{{ poll.id }}/">{{ poll.question }}</a></li>
+    {% endfor %}
+    </ul>
 {% else %}
-<p>No polls are available.</p>
+    <p>No polls are available.</p>
 {% endif %}
 
