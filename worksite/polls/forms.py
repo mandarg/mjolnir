@@ -3,7 +3,8 @@ from worksite.polls.models import Poll, Choice
 
 class PollForm(forms.ModelForm):
     class Meta:
-        model = Poll
+		title = forms.CharField()
+		pub_date = forms.DateField()
 
 class ChoiceForm(forms.ModelForm):
     class Meta:
